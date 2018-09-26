@@ -81,8 +81,12 @@ augroup my_auto_commands_group
   " Add comments to .vim files using the specific commenting syntax that .vim
   " files requires
   autocmd FileType vim nnoremap <buffer> <localleader>c I" <esc>
+  " Add comments to .css files using the specific commenting syntax that .css
+  " files requires
+  autocmd FileType css nnoremap <buffer> <localleader>c I/*<esc>A */<esc>
   " Fold html tag easily - use za to unfold all folds
   autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
 augroup END
 " }}}
 " Test comment for purpose of checking that git is working.
+" Another test
